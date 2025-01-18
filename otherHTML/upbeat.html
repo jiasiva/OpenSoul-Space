@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upbeat Music</title>
+    <link rel="stylesheet" href="../otherStylesheet/upbeat.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h2 class="logo">OpenSoul space</h2>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+               
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>Feel the Beat!</h1>
+        <p>Experience a burst of energy and positivity with our upbeat music selections.</p>
+    </div>
+
+    <!-- Upbeat Music Section -->
+    <section id="MUSIC" class="music-section">
+        <h2>Upbeat Music Playlist</h2>
+        <div class="music-list">
+            <!-- Music Item 1 -->
+            <div class="music-item" onclick="toggleAudio('audio1')">
+                <div class="music-title">High Energy</div>
+                <audio id="audio1" class="audio-player" controls>
+                    <source src="../Sounds/song1.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <!-- Music Item 2 -->
+            <div class="music-item" onclick="toggleAudio('audio2')">
+                <div class="music-title"> Feel the Groove</div>
+                <audio id="audio2" class="audio-player" controls>
+                    <source src="../Sounds/song2.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <!-- Music Item 3 -->
+            <div class="music-item" onclick="toggleAudio('audio3')">
+                <div class="music-title"> Vibrant Vibes</div>
+                <audio id="audio3" class="audio-player" controls>
+                    <source src="../Sounds/song3.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="FOOTER">
+        <h2>Get in Touch</h2>
+        <p>We'd love to hear from you!</p>
+        <div class="social-links">
+            <li><a href="https://github.com/jiasiva"><i class="fab fa-github-square"></i></a></li>
+            <li><a href="jiapriyasiva2207@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
+        </div>
+    </footer>
+
+    <script src="../otherJS/upbeat.js"></script>
+</body>
+</html>

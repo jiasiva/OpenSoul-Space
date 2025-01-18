@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+
+    <link rel="stylesheet" href="../otherStylesheet/common.css">
+    <link rel="stylesheet" href="../otherStylesheet/task-management.css">
+    <script src="https://kit.fontawesome.com/1b2b6a64da.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="../Images/task_icon.png">
+</head>
+<body>
+
+    <div class="land-cont">
+
+        <!-- HEADER -->
+        <div class="header">
+            <div class="logo-container">
+                <h2 class="logo">OpenSoul Space..</h2>
+            </div>
+            <div class="nav-and-btn-cont">
+                <ul class="nav-ul">
+                    <li><a href="../index.html">HOME</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <!-- LANDING SECTION -->
+        <div class="land-img-cont">
+            <div class="task-page-head">
+                <h2>Manage Your <span>Tasks</span> and Boost Productivity</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- TASK MANAGEMENT SECTION -->
+    <div class="section-2">
+        <div class="section-2-para">
+            <p>
+                Organize your daily tasks efficiently, set deadlines, and track progress. TaskTrack helps you stay focused and achieve your goals with ease. 
+                Manage your tasks anytime, anywhere!
+            </p>
+        </div>
+        <a id="TASKS"></a>
+
+        <!-- TASK INPUT FORM -->
+        <div class="task-input-section">
+            <h2>Add New Task</h2>
+            <form id="task-form">
+                <input type="text" id="task-title" placeholder="Task Title" required>
+                <textarea id="task-details" placeholder="Task Details"></textarea>
+                <input type="date" id="task-deadline">
+                <button type="submit" class="add-task-btn">Add Task</button>
+            </form>
+        </div>
+
+        <!-- TASK LIST -->
+        <div class="task-list-section">
+            <h2>Your Tasks</h2>
+            <div id="task-list">
+                <!-- Individual Task Items -->
+                <div class="task-item">
+                    <h3>Task Title</h3>
+                    <p>Task details go here...</p>
+                    <p><strong>Deadline:</strong> 2025-01-20</p>
+                    <button class="complete-task-btn">Mark Complete</button>
+                    <button class="delete-task-btn">Delete</button>
+                </div>
+                <!-- Add dynamically generated tasks here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <a id="FOOTER"></a>
+    <div class="footer">
+        <div class="footer-text-cont">
+            <h2>Stay Organized.</h2>
+            <p>Track, Manage, and Complete Tasks with Ease!</p>
+        </div>
+        <div class="social-icon-cont">
+            <div class="social-head">
+                <h2 class="logo footer-logo">OpenSoul Space..</h2>
+                
+            </div>
+           
+        </div>
+    </div>
+
+    <script src="../otherJS/taskManagement.js"></script>
+</body>
+</html>

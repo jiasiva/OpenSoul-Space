@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Stories</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <h1>Motivational Stories</h1>
+        <p>Find inspiration and strength through these short tales.</p>
+    </header>
+
+    <!-- STORY CARDS -->
+    <main class="stories-container">
+        <!-- Story 1 -->
+        <div class="story-card">
+            <h2>The Starfish Thrower</h2>
+            <p class="story-content" id="story1-content">
+                One morning, a man was walking along the beach when he saw a young boy picking up starfish and throwing them back into the sea. Curious, the man asked, "Why are you doing that?" 
+                <span class="hidden-content">The boy replied, "The sun is up, and the tide is going out. If I don't throw them back, they'll die." The man looked around and said, "But there are miles of beach and thousands of starfish. You can’t possibly make a difference." The boy picked up another starfish, threw it into the ocean, and said, "I made a difference to that one."</span>
+            </p>
+            <audio controls>
+                <source src="audio/starfish-thrower.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <button class="toggle-btn" onclick="toggleStory('story1-content')">Read More</button>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="story-card">
+            <h2>The Cracked Pot</h2>
+            <p class="story-content" id="story2-content">
+                An elderly woman carried two pots to fetch water daily. One pot was perfect, while the other had a crack and leaked water. By the time she reached home, the cracked pot was only half full. 
+                <span class="hidden-content">The perfect pot mocked the cracked pot, saying, "You’re a failure. You can’t even hold water properly." The cracked pot felt ashamed and apologized to the woman. The woman smiled and said, "Haven’t you noticed the flowers growing along your side of the path? I planted seeds there, knowing your water would nurture them. Because of you, I can enjoy beautiful flowers every day."</span>
+            </p>
+            <audio controls>
+                <source src="audio/cracked-pot.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <button class="toggle-btn" onclick="toggleStory('story2-content')">Read More</button>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="story-card">
+            <h2>The Weight of the Glass</h2>
+            <p class="story-content" id="story3-content">
+                A psychology professor walked around the classroom with a glass of water. She asked, "How heavy is this glass?" Answers ranged from a few ounces to a couple of pounds. She replied, "The actual weight doesn’t matter. What matters is how long you hold it." 
+                <span class="hidden-content">She continued, "The stresses and worries of life are like this glass of water. Hold them briefly, and they’re manageable. Hold them longer, and they hurt. Hold them all day, and they paralyze you. Remember to put the glass down."</span>
+            </p>
+            <audio controls>
+                <source src="audio/weight-of-glass.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <button class="toggle-btn" onclick="toggleStory('story3-content')">Read More</button>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2025 Motivational Stories. All rights reserved.</p>
+    </footer>
+</body>
+</html>

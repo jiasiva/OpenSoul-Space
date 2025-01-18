@@ -1,0 +1,165 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f1f5f0;
+}
+
+/* Variables */
+:root {
+    --primary-color:#00B7A8;
+    --light-color: #fff;
+    --dark-color: #333;
+    --secondary-color: #4c6cfa;
+}
+
+/* Header */
+.header {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5em;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: var(--light-color);
+    font-weight: bold;
+    transition: color 300ms ease;
+}
+
+.header nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    background-color: rgb(14, 104, 104);;
+    color: var(--light-color);
+    padding: 4em 2em;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+/* Music Section */
+.music-section {
+    padding: 3em ;
+    text-align: center;
+    
+}
+
+.music-section h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: rgb(14, 104, 104);
+    
+}
+
+.music-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    background-image: url(../Images/music-image/up.jpeg)
+    
+}
+
+.music-item {
+    background-color: rgb(14, 104, 104);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1.5em;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.music-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.music-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    color:white;
+}
+
+.audio-player {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 2em 1em;
+}
+
+footer h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+footer p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: var(--light-color);
+    margin: 0 1em;
+    font-size: 1.2em;
+    transition: color 300ms ease;
+}
+
+footer .social-links a:hover {
+    color: var(--secondary-color);
+}
+
+footer p:last-child {
+    font-size: 0.9em;
+    margin-top: 1em;
+    opacity: 0.8;
+}

@@ -1,0 +1,54 @@
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #3d9fff, #3fffa4);
+}
+.container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+}
+.container h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.play-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.play-button:hover {
+    background-color: #45a049;
+}
+.sounds, .stories {
+    margin-top: 20px;
+}
+.sounds button, .stories button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+.sounds button:hover, .stories button:hover {
+    background-color: #0056b3;
+}
+.slider {
+    margin-top: 15px;
+}
+.instrumental, .motivational {
+    margin-top: 30px;
+}
